@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="om">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Curso Básico HTML5</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-content">
+                <h1 class="principal-title">Curso Básico HTML5</h1>
+                <nav>
+                    <ul class="navigation-ul">
+                        <li class="navigation-list"><a class="navigation-link" href="https://www.w3schools.com/html/">Menu item 1</a></li>
+                        <li class="navigation-list"><a class="navigation-link" href="https://www.w3schools.com/css/">Menu item 2</a></li>
+                        <li class="navigation-list"><a class="navigation-link" href="https://www.w3schools.com/js/">Menu item 3</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="wrapper">
+            <article class="news">
+                <div class="container-news">
+                    <h2 id="title">Mi Noticia</h2>
+                    <p>Lorem <b>ipsum</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <figure class="image-publicity">
+                    <img src="img.png" alt="publicidad">
+                </figure>
+            </article>
+            <section class="container-forms">
+                <h2>Mi Formulario</h2>
+                <form id="form" name="form">
+                    <fieldset class="form-data personal-data">
+                        <legend class="form-title">Datos personales</legend>
+                        <div class="container-form">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="nombre" id="name">
+                        </div>
+                        <div class="container-form">
+                            <label for="surname">Apellidos</label>
+                            <input type="text" id="surname">
+                        </div>
+                        <div class="container-form">
+                            <label for="telephone">Teléfono</label>
+                            <input type="number" id="telephone">
+                        </div>
+                        <div class="container-form container-radiobutton">
+                            <input type="radio" id="dni" name="identityCard" value="DNI">
+                            <label for="dni">DNI</label>
+                            <input type="radio" id="nie" name="identityCard" value="NIE">
+                            <label for="nie">NIE</label><br>
+                        </div>
+                        <div class="container-form">
+                            <label for="numberIdentityCard">Nº Documento</label>
+                            <input type="text" id="numberIdentityCard">
+                        </div>                
+                    </fieldset>
+                    <fieldset class="form-data other-data">
+                        <legend class="form-title">Otros datos</legend>
+                        <div class="container-form">
+                            <label for="siblings">Número de hermanos/as</label>
+                            <input type="number" id="siblings">  
+                        </div>
+                        <div class="container-form">
+                            <p>Deportes favoritos:</p>
+                            <ol>
+                                <li>
+                                    <label for="futbol">Fútbol</label>
+                                    <input type="checkbox" name="sports" id="futbol" value="Fútbol">
+                                </li>
+                                <li>
+                                    <label for="baloncesto">Baloncesto</label>
+                                    <input type="checkbox" name="sports" id="baloncesto" value="baloncesto">
+                                </li>
+                                <li>
+                                    <label for="tenis">Tenis</label>
+                                    <input type="checkbox" name="sports" id="tenis" value="tenis">
+                                </li>
+                                <li>
+                                    <label for="padel">Padel</label>
+                                    <input type="checkbox" name="sports" id="paddle" value="Padel">
+                                </li>
+                                <li>
+                                    <label for="crossfit"></label>
+                                    <input type="checkbox" name="sports" id="crossfit" value="crossfit">
+                                </li>
+                            </ol>
+                        </div>
+                    </fieldset>
+                    <input class="btn" type="reset" value="Reset Form">
+                    <input class="btn" type="submit">
+                </form>
+            </section>
+            <table class="table-example" id="tableExample">
+                <caption><h2>Titulo tabla</h2></caption>
+                <thead>
+                <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Teléfono</th>
+                        <th>DNI/NIE</th>
+                        <th>Deportes</th>
+                    </tr> 
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Antonio</td>
+                        <td>Antonio</td>
+                        <td>12345678</td>
+                        <td>12345678-A</td>
+                        <td>Futbol, Baloncesto</td>
+                    </tr>
+                    <tr>
+                        <td>Andres</td>
+                        <td>Andres</td>
+                        <td>123456789</td>
+                        <td>12345678-B</td>
+                        <td>Rugby</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </div>
+    </body>
+    <script src="file.js"></script>
+</html>
